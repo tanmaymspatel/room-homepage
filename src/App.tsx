@@ -1,8 +1,11 @@
+import CarouselProvider from "./context/CarouselProvider";
 import RoomHomepage from "./pages/RoomHomepage";
 
 function App() {
   return (
-    <RoomHomepage />
+    <CarouselProvider>
+      <RoomHomepage />
+    </CarouselProvider>
   );
 }
 
