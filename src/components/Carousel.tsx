@@ -23,17 +23,17 @@ function Carousel() {
     }
 
     return (
-        <div>
+        <>
             {randerSlide(slideNo)}
-            <div className="d-flex position-absolute bottom-0 btn-arrows">
+            <div className="d-flex position-absolute bottom-0 arrows-container">
                 <p className=" mb-0 slider-btn cursor-pointer transition" onClick={prev}>
                     <img src={leftArrow} alt="left-arrow" />
                 </p>
-                <p className=" mb-0 slider-btn cursor-pointer transition" onClick={next}>
+                <p className="mb-0 slider-btn cursor-pointer transition" onClick={next}>
                     <img src={rightArrow} alt="right-arrow" />
                 </p>
             </div>
-        </div>
+        </>
     )
 };
 

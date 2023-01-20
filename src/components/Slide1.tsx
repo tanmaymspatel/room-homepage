@@ -5,9 +5,7 @@ function Slide1() {
     return (
         <div className="row g-0 h-100">
             <div className="col-sm-7">
-                <img src={imgSlider1} alt="hero-1" className='w-100 h-auto' />
-                {/* <figure className="mb-0 w-100 h-100">
-                </figure> */}
+                <img src={imgSlider1} alt="hero-1" className='w-100 h-100' />
             </div>
             <div className="col-sm-5">
                 <div className='hero-content h-100 d-flex flex-column justify-content-center'>

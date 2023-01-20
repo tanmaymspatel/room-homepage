@@ -1,6 +1,5 @@
 import About from '../components/About'
 import Carousel from '../components/Carousel';
-import Slide1 from '../components/Slide1';
 
 function RoomHomepage() {
     return (
@@ -8,7 +7,7 @@ function RoomHomepage() {
             <div className="carousel position-relative">
                 <Carousel />
             </div>
-            <div className="about flex-grow-1 flex-shrink-0">
+            <div className="flex-grow-1 flex-shrink-0">
                 <About />
             </div>
         </div>

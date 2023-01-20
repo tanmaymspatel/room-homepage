@@ -11,7 +11,7 @@ function About() {
                     </figure>
                 </div>
                 <div className="col-sm-4">
-                    <div className='about-content'>
+                    <div className='about-content h-100 d-flex flex-column justify-content-center'>
                         <h4 className='heading-about text-uppercase'>about our furniture</h4>
                         <p className='about-text text-primary'>
                             Our multifunctional collection blends design and function to suit your
