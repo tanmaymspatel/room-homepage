@@ -4,6 +4,16 @@
 
     .hero-content {
         padding: 0 6rem;
+        height: 100%;
+
+        @include media-breakpoint-down(xxl) {
+            padding: 3rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 2rem 2rem;
+            height: 450px;
+        }
 
         @include media-breakpoint-up(xxxl) {
             padding: 0 8rem;
@@ -17,15 +27,52 @@
         padding: 1rem 0;
         letter-spacing: -2px;
         line-height: 50px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 2rem;
+            line-height: 40px;
+        }
+    }
+
+    .hero-text {
+        font-size: 1rem;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+        }
     }
 
     .arrows-container {
         left: 58.35%;
+        bottom: 0;
+
+        @include media-breakpoint-down(lg) {
+            left: 78.5%;
+            bottom: 51.5%;
+        }
+
+        @include media-breakpoint-down(sm) {
+            left: 75%;
+            bottom: 55.7%;
+        }
     }
 
     .slider-btn {
         padding: 2.15rem;
         background-color: $dark;
+
+        @include media-breakpoint-down(xxl) {
+            padding: 2rem;
+        }
+
+        @include media-breakpoint-down(xl) {
+            padding: 1.5rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 1rem;
+
+        }
 
         @include media-breakpoint-up(xxxl) {
             padding: 2.75rem;
@@ -67,9 +114,18 @@
         font-size: 1.15rem;
         font-weight: 700;
         letter-spacing: 7px;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+        }
     }
 
     .about-content {
         padding: 0 3rem;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 0.875rem;
+            padding: 0 2rem;
+        }
     }
 }

@@ -25,7 +25,7 @@ function Carousel() {
     return (
         <>
             {randerSlide(slideNo)}
-            <div className="d-flex position-absolute bottom-0 arrows-container">
+            <div className="d-flex position-absolute arrows-container">
                 <p className=" mb-0 slider-btn cursor-pointer transition" onClick={prev}>
                     <img src={leftArrow} alt="left-arrow" />
                 </p>
