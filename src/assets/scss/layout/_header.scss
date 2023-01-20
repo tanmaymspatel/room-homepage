@@ -44,6 +44,10 @@
         padding-bottom: 0.5rem;
         border-bottom: 2px solid transparent;
 
+        @include media-breakpoint-down(lg) {
+            color: $dark;
+        }
+
         &:hover {
             border-color: $light;
         }
@@ -73,9 +77,6 @@
         &~.navigation-links {
             transform: translateY(0%);
 
-            .nav-text {
-                color: $dark;
-            }
         }
 
     }
