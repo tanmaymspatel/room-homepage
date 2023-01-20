@@ -5,8 +5,32 @@
         padding: 10rem;
     }
 
+    .hero-heading {
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 1rem 0;
+    }
+
     .btn-arrows {
-        left: 60%
+        left: 58.35%;
+    }
+
+    .slider-btn {
+        padding: 2rem;
+        background-color: $dark;
+
+        &:hover {
+            background-color: rgba($dark, 0.7);
+        }
+    }
+
+    .shop-text {
+        letter-spacing: 10px;
+        font-weight: 600;
+
+        &:hover {
+            color: $primary;
+        }
     }
 }
 
