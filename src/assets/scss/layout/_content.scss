@@ -1,11 +1,53 @@
+// slider 
 .carousel {
-    flex: 0 0 65%;
+    flex: 0 0 70vh;
+
+    .hero-content {
+        padding: 0 6rem;
+
+        @include media-breakpoint-up(xxxl) {
+            padding: 0 8rem;
+        }
+
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 1rem 0;
+        letter-spacing: -2px;
+        line-height: 50px;
+    }
+
+    .arrows-container {
+        left: 58.35%;
+    }
+
+    .slider-btn {
+        padding: 1.5rem;
+        background-color: $dark;
+
+        @include media-breakpoint-up(xxxl) {
+            padding: 2rem;
+        }
+
+        &:hover {
+            background-color: rgba($dark, 0.7);
+        }
+    }
+
+    .shop-text {
+        letter-spacing: 10px;
+        font-weight: 600;
+
+        &:hover {
+            color: $primary;
+        }
+    }
 }
 
-.about {
-    flex: 0 0 35%;
 
-    .about-content {
-        padding: 5rem 3rem;
-    }
+// About our furniture 
+.about-content {
+    padding: 0 3rem;
 }
