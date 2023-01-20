@@ -5,6 +5,7 @@ import Slide2 from "./Slide2";
 import Slide3 from "./Slide3";
 import leftArrow from "../assets/images/icon-angle-left.svg"
 import rightArrow from "../assets/images/icon-angle-right.svg"
+import Header from "./Header";
 
 function Carousel() {
     const { prev, next, slideNo } = useContext(CarouselContext);
@@ -25,6 +26,7 @@ function Carousel() {
     return (
         <>
             {randerSlide(slideNo)}
+            <Header />
             <div className="d-flex position-absolute arrows-container">
                 <p className=" mb-0 slider-btn cursor-pointer transition" onClick={prev}>
                     <img src={leftArrow} alt="left-arrow" />
