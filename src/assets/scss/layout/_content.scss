@@ -24,11 +24,11 @@
     }
 
     .slider-btn {
-        padding: 1.5rem;
+        padding: 2.15rem;
         background-color: $dark;
 
         @include media-breakpoint-up(xxxl) {
-            padding: 2rem;
+            padding: 2.75rem;
         }
 
         &:hover {
@@ -46,8 +46,30 @@
     }
 }
 
-
 // About our furniture 
-.about-content {
-    padding: 0 3rem;
+.about-image-col {
+    width: 30%;
+
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
+}
+
+.about-col {
+    width: 40%;
+
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+        padding: 3rem 0;
+    }
+
+    .heading-about {
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: 7px;
+    }
+
+    .about-content {
+        padding: 0 3rem;
+    }
 }
