@@ -15,7 +15,7 @@ function Slide({ i }: ISlideProps) {
                 <img src={SliderData[i].mobileImg} alt="hero-2" className='w-100 h-100 d-sm-none' />
             </div>
             <div className="col-lg-5">
-                <div className='hero-content h-100 d-flex flex-column justify-content-center'>
+                <div className='hero-content d-flex flex-column justify-content-center'>
                     <h1 className='hero-heading'>{SliderData[i].heading}</h1>
                     <p className='text-primary hero-text'>{SliderData[i].sliderText}</p>
                     <p className='pt-3 cursor-pointer mb-0'>
