@@ -7,6 +7,6 @@ function App() {
       <RoomHomepage />
     </CarouselProvider>
   );
-}
+};
 
 export default App;

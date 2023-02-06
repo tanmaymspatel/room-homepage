@@ -1,11 +1,11 @@
 import About from '../components/About'
 import Carousel from '../components/Carousel';
-import Header from '../components/Header';
-
+/**
+ * @returns homepage of the room
+ */
 function RoomHomepage() {
     return (
         <div className="h-100 d-flex flex-column overflow-y-auto">
-            {/* <Header /> */}
             <div className="carousel position-relative">
                 <Carousel />
             </div>
@@ -14,6 +14,6 @@ function RoomHomepage() {
             </div>
         </div>
     )
-}
+};
 
 export default RoomHomepage;

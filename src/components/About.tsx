@@ -1,6 +1,8 @@
 import darkImg from '../assets/images/image-about-dark.jpg'
 import lightImg from '../assets/images/image-about-light.jpg'
-
+/**
+ * @returns About section of the page
+ */
 function About() {
     return (
         <>

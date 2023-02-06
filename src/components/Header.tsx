@@ -1,6 +1,8 @@
 import hamburgerImage from '../assets/images/icon-hamburger.svg'
 import iconClose from '../assets/images/icon-close.svg'
-
+/**
+ * @returns Header of the page
+ */
 function Header() {
     return (
         <header id="header" className="position-absolute top-0 start-0 d-flex align-items-center">

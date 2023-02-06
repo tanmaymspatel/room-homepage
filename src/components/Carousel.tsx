@@ -1,27 +1,33 @@
 import { useContext } from "react";
+
 import { CarouselContext } from "../context/carouselContext";
-import Slide1 from "./Slide1";
-import Slide2 from "./Slide2";
-import Slide3 from "./Slide3";
 import leftArrow from "../assets/images/icon-angle-left.svg"
 import rightArrow from "../assets/images/icon-angle-right.svg"
 import Header from "./Header";
-
+import Slide from "./Slide";
+/**
+ * @returns carousel for the page 
+ */
 function Carousel() {
+    // consumption of the carousel context
     const { prev, next, slideNo } = useContext(CarouselContext);
-
+    /**
+     * @name randerSlide
+     * @param slideNo no of slide 
+     * @returns slider for respective slide number
+     */
     const randerSlide = (slideNo: number) => {
         switch (slideNo) {
             case 1:
-                return <Slide1 />;
+                return <Slide i={0} />;
             case 2:
-                return <Slide2 />;
+                return <Slide i={1} />;
             case 3:
-                return <Slide3 />;
+                return <Slide i={2} />;
             default:
                 return;
-        }
-    }
+        };
+    };
 
     return (
         <>
